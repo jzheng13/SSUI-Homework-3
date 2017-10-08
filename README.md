@@ -1,12 +1,51 @@
 # SSUI-Homework-3
-A template for Software Structures for User Interfaces Fall 2017 course, Homework 3.
 
-To get started with your homework, please fork this repository. Instructions can be found here:https://help.github.com/articles/fork-a-repo/
+## Bun Bake Shop
+This is a webpage designed for *Bun Bun Bake Shop*, a bakery that specializes in cinnamon rolls, from the famous classic to a variety of artisan flavors. The bakery is located in Pittsburgh, PA, but ships fresh rools to anywhere in the United States.
 
-Be sure to add me, your TA, as a collaborator on your forked repository, so that I can grade your work! My github name is mkery. To add collaborators, follow this guide:https://help.github.com/articles/inviting-collaborators-to-a-personal-repository/
+## Prototypes
 
-Finally, when you're done, publish your webpage! This is super easy. Just go to Settings in your repository, then go to Github Pages, and set the Github Pages to follow the master branch. What does that mean? Github will look for an index.html file in your repository. Yay! There's already one there per the HW 3 template. So, Github will host the webpage it finds! Finally, please paste the URL it gives you into the description for your repository so that I can view your website!
+### Wireframes
 
-Here's a guide to Github Pages, in case you get stuck: https://guides.github.com/features/pages/
+1. Homepage
+   ![Index](./wireframes/BBBS_Index.png)
+2. Products
+   ![Products](./wireframes/BBBS_Products.png)
+3. Item
+   ![Item](./wireframes/BBBS_Item.png)
+4. Cart
+   ![Cart](./wireframes/BBBS_Cart.png)
 
-Happy coding & designing!
+
+### Digital Mockup
+TODO: Embed digital mockup + link
+
+## Reflection
+TODO: Thoughts
+
+## Bonus Features
+TODO: Implement bonus feature for extra credit
+
+## Resources Used
+
+1. Images (labelled reuse with modifications)
+
+   ![bannerimg](resources/images/banner.jpg)
+   Retrieved from Wikipedia https://upload.wikimedia.org/wikipedia/commons/3/3b/Cinnamon_rolls_from_above%2C_April_2009.jpg on 28 September 2017
+
+   ![classicimg](resources/images/classic.jpg)
+   Retrieved from Wikipedia https://commons.wikimedia.org/wiki/File:Johns_Inc_Cinnamon_Rolls.jpg on 28 September 2017
+
+   ![cinnamonimg](resources/images/cinnamon.jpg)
+   Retrieved from Pixabay https://cdn.pixabay.com/photo/2016/12/09/14/40/cinnamon-1894991_1280.jpg on 28 September 2017
+
+   ![cupcakishimg](resources/images/cupcakish.jpg)
+   Retrieved from Pixabay https://cdn.pixabay.com/photo/2016/07/02/02/26/buns-1492328_1280.jpg on 28 September 2017
+
+2. Font Awesome icon pack
+
+   Retrieved from http://fontawesome.io/
+
+
+
+
