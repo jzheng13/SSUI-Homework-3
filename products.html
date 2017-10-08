@@ -1,0 +1,171 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Bun Bun Bake Shop :: Rolls</title>
+
+    <!--The following line loads in your CSS style sheet-->
+    <link rel="stylesheet" href="styles/index.css">
+
+    <!--The following line loads the font-awesome icon libary-->
+    <link rel="stylesheet" href="styles/font-awesome.min.css">
+
+    <!--The following line loads in 2 fonts from Google Fonts: Bad Script and Lato-->
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script|Lato" rel="stylesheet">
+
+    <!--The following line loads in your JS script-->
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="container">
+            <div class="roll">
+                <form>
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                    <input type="text" name="search" placeholder="Search" />
+                </form>
+                <a href="#" class="cart">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    <span class="badge" id="cartitems" data-val="0"></span>
+                </a>
+            </div>
+            <div class="cartcontents" id="cartcontents"></div>
+        </div>
+    </div>
+
+    <a href="index.html">
+        <div class="banner">
+            <div id="bannercontents">
+                <span class="name">Bun Bun Bake Shop</span>
+                <span class="subtitle">We're on a roll!</span>
+            </div>
+        </div>
+    </a>
+
+    <div class="section">
+        <div class="container">
+            <div class="flexbox flexrow">
+                <div id="placeholder"></div>
+                <ul class="sidenav">
+                    <li><a href="#">&nbsp;&nbsp;About</a></li>
+                    <li><a href="products.html">&nbsp;&nbsp;Rolls</a></li>
+                    <li><a href="#">&nbsp;&nbsp;Delivery</a></li>
+                </ul>
+                <div class="page-contents">
+                    <div class="section">
+                        <div class="navtree">
+                            <a href="index.html">Home</a> > 
+                            <a id="current" href="products.html">Rolls</a>
+                        </div>
+                        <div class="subpage">Rolls</div>
+                    </div>
+                    <div class="section">
+                        <div class="flexbox flexwrap">
+                            <div class="flexitem" id="menuitem" onclick="toItemPage()">
+                                <img width="250" height="175" src="resources/images/default.jpg" alt="NA" />
+                                <span class="roll"><b>Original</b><span>$3.00</span></span>
+                                <p>The classic.</p>
+                            </div>
+                            <div class="flexitem" id="menuitem" onclick="toItemPage()">
+                                <img width="250" height="175" src="resources/images/default.jpg" alt="NA" />
+                                <span class="roll"><b>Original (Gluten-free)</b><span>$3.50</span></span>
+                                <p>The classic and gluten-free!</p>
+                            </div>
+                            <div class="flexitem" id="menuitem" onclick="toItemPage()">
+                                <img width="250" height="175" src="resources/images/default.jpg" alt="NA" />
+                                <span class="roll"><b>Original (Vegan)</b><span>$3.50</span></span>
+                                <p>The classic for herbivores.</p>
+                            </div>
+                            <div class="flexitem" id="menuitem" onclick="toItemPage()">
+                                <img width="250" height="175" src="resources/images/default.jpg" alt="NA" />
+                                <span class="roll"><b>Maple Apple Pecan</b><span>$3.50</span></span>
+                                <p>With a touch of maple syrup, apple concentrate and pecan nuts.</p>
+                            </div>
+                            <div class="flexitem" id="menuitem" onclick="toItemPage()">
+                                <img width="250" height="175" src="resources/images/default.jpg" alt="NA" />
+                                <span class="roll"><b>Bacon</b><span>$3.50</span></span>
+                                <p>Breakfast!</p>
+                            </div>
+                            <div class="flexitem" id="menuitem" onclick="toItemPage()">
+                                <img width="250" height="175" src="resources/images/default.jpg" alt="NA" />
+                                <span class="roll"><b>Walnut</b><span>$3.50</span></span>
+                                <p>Can't be bothered with descriptions anymore.</p>
+                            </div>
+                            <div class="flexitem" id="menuitem" onclick="toItemPage()">
+                                <img width="250" height="175" src="resources/images/default.jpg" alt="NA" />
+                                <span class="roll"><b>Pumpkin Spice</b><span>$3.50</span></span>
+                                <p>Can't be bothered with descriptions anymore.</p>
+                            </div>
+                            <div class="flexitem" id="menuitem" onclick="toItemPage()">
+                                <img width="250" height="175" src="resources/images/default.jpg" alt="NA" />
+                                <span class="roll"><b>Caramel Pecan</b><span>$3.50</span></span>
+                                <p>Can't be bothered with descriptions anymore.</p>
+                            </div>
+                            <div class="flexitem" id="menuitem" onclick="toItemPage()">
+                                <img width="250" height="175" src="resources/images/default.jpg" alt="NA" />
+                                <span class="roll"><b>Carrot Cake</b><span>$3.50</span></span>
+                                <p>Can't be bothered with descriptions anymore.</p>
+                            </div>
+                            <div class="flexitem" id="menuitem" onclick="toItemPage()">
+                                <img width="250" height="175" src="resources/images/default.jpg" alt="NA" />
+                                <span class="roll"><b>Old Fashioned Buttermilk</b><span>$3.50</span></span>
+                                <p>Can't be bothered with descriptions anymore.</p>
+                            </div>
+                            <div class="flexitem" id="menuitem" onclick="toItemPage()">
+                                <img width="250" height="175" src="resources/images/default.jpg" alt="NA" />
+                                <span class="roll"><b>Strawberry Rubarb</b><span>$3.50</span></span>
+                                <p>Can't be bothered with descriptions anymore.</p>
+                            </div>
+                            <div class="flexitem" id="menuitem" onclick="toItemPage()">
+                                <img width="250" height="175" src="resources/images/default.jpg" alt="NA" />
+                                <span class="roll"><b>Birthday Cake</b><span>$4.00</span></span>
+                                <p>Can't be bothered with descriptions anymore.</p>
+                            </div>
+                            <div class="flexitem" id="menuitem" onclick="toItemPage()">
+                                <img width="250" height="175" src="resources/images/default.jpg" alt="NA" />
+                                <span class="roll"><b>Lemon Lavender</b><span>$4.00</span></span>
+                                <p>Can't be bothered with descriptions anymore.</p>
+                            </div>
+                            <div class="flexitem" id="menuitem" onclick="toItemPage()">
+                                <img width="250" height="175" src="resources/images/default.jpg" alt="NA" />
+                                <span class="roll"><b>Cranberry</b><span>$4.00</span></span>
+                                <p>Can't be bothered with descriptions anymore.</p>
+                            </div>
+                            <div class="flexitem" id="menuitem" onclick="toItemPage()">
+                                <img width="250" height="175" src="resources/images/default.jpg" alt="NA" />
+                                <span class="roll"><b>Blackberry</b><span>$4.00</span></span>
+                                <p>Can't be bothered with descriptions anymore.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section">
+                    </div>
+                    <div class="section">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="container">
+            <div class="contact">
+                <b>Bun Bun Bake Shop</b><br />
+                4321 Murray Ave <br />
+                Pittsburgh, PA 15217 <br />
+                &#128222; (412) 123-4567 <br />
+                &#128231; rollaboat@bunbunbakes.com <br />
+                &#128336; 10:00 AM - 17:00 PM on weekdays
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; Created by Jia Zheng (jzheng2@andrew.cmu.edu) for F17 SSUI Assignment 3.
+        </div>
+    </footer>
+</body>
+
+
+</html>

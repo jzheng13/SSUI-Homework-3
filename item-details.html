@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Bun Bun Bake Shop</title>
+    <title>Bun Bun Bake Shop :: Rolls</title>
 
     <!--The following line loads in your CSS style sheet-->
     <link rel="stylesheet" href="styles/index.css">
@@ -20,12 +20,12 @@
 <body>
     <div class="navbar">
         <div class="container">
-            <div class="roll">           
+            <div class="roll">
                 <form>
                     <i class="fa fa-search" aria-hidden="true"></i>
-                    <input type="text" name="search" placeholder="Search"/>
+                    <input type="text" name="search" placeholder="Search" />
                 </form>
-                <a href="#" class="cart">
+                <a href="cart.html" class="cart">
                     <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                     <span class="badge" id="cartitems" data-val="0"></span>
                 </a>
@@ -54,26 +54,45 @@
                 </ul>
                 <div class="page-contents">
                     <div class="section">
+                        <div class="navtree">
+                            <a href="index.html">Home</a> > 
+                            <a href="products.html">Rolls</a> >
+                            <a id="current" href="item-details.html">Original</a>
+                        </div>
                         <div class="flexbox flexwrap">
-                            <div class="flexitem">
-                                <span class="iconcat"><i class="fa fa-cutlery fa-4x" aria-hidden="true"></i></span><br /><br />
-                                <img width="250" height="175" src="resources/images/classic.jpg" alt="NA" />
-                                <p>Our signature classic cinnamon rolls are the favorites of every Pittsburgher out there! We use top quality ingredients, importing the cinnamons from Indonesia. The classic recipe has been refined for decades and we trust that no one can resist the taste of our rolls. As if.</p>
+                            <div class="flexitem" id="menuitem">
+                                <img width="250" height="175" src="resources/images/default.jpg" alt="NA" />
                             </div>
-                            <div class="flexitem">
-                                <span class="iconcat"><i class="fa fa-lightbulb-o fa-4x" aria-hidden="true"></i></span><br /><br />
-                                <img width="250" height="175" src="resources/images/cinnamon.jpg" alt="NA" />
-                                <p>We have got a wide selection of different flavours for you to choose from. Can't find one you like or got ideas for a new flavour? Tell us! We'll be happy to custom bake one for you... at a premium of course. </p>
-                            </div>
-                            <div class="flexitem">
-                                <span class="iconcat"><i class="fa fa-truck fa-4x" aria-hidden="true"></i></span><br /><br />
-                                <img width="250" height="175" src="resources/images/cupcakish.jpg" alt="NA" />
-                                <p>We ship fresh cinnamon rolls across the whole of the United States. However, we cannot guarantee that the cinnamon rolls will still be edible upon arrival. Additionally, please refer to the delivery page for more details about time frame as well as costs. </p>
-                            </div>
-                        </div>              
+                            <div class="flexitem" id="itemdes">
+                                <div class="itemname">
+                                    <span id="itemtoadd">Original</span>
+                                    <span class="fa fa-star rated"></span>
+                                    <span class="fa fa-star rated"></span>
+                                    <span class="fa fa-star rated"></span>
+                                    <span class="fa fa-star rated"></span>
+                                    <span class="fa fa-star rated"></span>
+                                </div>
+                                <p>The classic.</p>
+                                <div class="roll addcart">
+                                    <span>$3.00</span>
+                                    <form>
+                                        <label for="qty">Quantity</label>
+                                        <input type="number" id="qty" min="1" max="50"/>
+                                        <button type="button" onclick="addToCart()">Add to cart</button>
+                                    </form> 
+                                </div>
+                            </div>                  
+                        </div>
                     </div>
-                    <div class="section"></div>
-                    <div class="section"></div>
+                    <div class="section">
+
+                    </div>
+                    <div class="section">
+
+                    </div>
+                    <div class="section">
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -93,7 +112,7 @@
         </div>
         <div class="copyright">
             &copy; Created by Jia Zheng (jzheng2@andrew.cmu.edu) for F17 SSUI Assignment 3.
-        </div>       
+        </div>
     </footer>
 </body>
 

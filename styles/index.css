@@ -1,20 +1,352 @@
+/* --------------------------- Starter elements --------------------------- */
 
-body{
-  text-align: center;
-  width: 40%;
-  margin: auto;
+body {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    margin: auto;
 }
 
 h1 {
-  font-family: 'Bad Script', cursive;
-  color: orangered;
+    font-family: 'Bad Script', cursive;
+    color: orangered;
 }
 
 p {
-  text-align: left;
-  font-family: 'Lato', sans-serif;
+    text-align: left;
+    font-family: 'Lato', sans-serif;
 }
 
-.starterImage{
-  width: 16em;
+/* redundant */
+.starterImage {
+    width: 16em;
 }
+
+/* -------------------------- My code starts here -------------------------- */
+
+/* Basic elements for padding and order */
+
+.section {
+    padding: 10px 0px;
+    width: 100%;
+}
+
+.container {
+    margin: 0px auto;
+    width: 90%;
+    max-width: 1600px;
+}
+
+.flexbox{
+    display: flex;
+}
+
+.flexrow {
+    flex-direction: row;
+}
+
+.flexwrap {
+    flex-flow: row wrap;
+}
+
+.flexitem {
+    flex-basis: 0;
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+/* Top bar and footer */
+
+.navbar {
+    height: 35px;
+    line-height: 35px;
+    overflow: hidden;
+    position: fixed;
+    background-color: black;
+    color: lightgrey;
+    width: 100%;
+    top: 0;
+}
+
+footer {
+    background-color: lightgray;
+    height: 150px;
+    font-size: 14px;
+    bottom: 0;
+}
+
+.contact {
+    width: 275px;
+    margin: auto 0px auto auto;
+    text-align: left;
+    padding: 10px;
+}
+
+.copyright {
+    background-color: grey;
+    bottom: 0;
+    height: 30px;
+    color: white;
+    font-size: 12px;
+    font-weight: 200;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    line-height: 30px;
+}
+
+/* Search bar */
+
+input[type=text] {
+    width: 200px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid grey;
+    height: 20px;
+}
+
+input[type=text]:focus {
+    color: lightgrey;
+    outline:none;
+}
+
+/* Drop-down cart */
+
+.cart {
+    color: lightgrey;
+    width: 60px;
+    vertical-align: middle;
+}
+
+.badge[data-val]:after {
+    content: attr(data-val);
+    background: darkcyan;
+    color: white;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 50%;
+    margin-top: 5px; /* vertical align not working as usual */
+    float: right;
+}
+
+
+/*
+.badge[data-badge]:after {
+    content: attr(data-badge);
+    background-color: darkcyan;
+    color: lightgrey;
+    height: 25px;
+    width: 40px;
+    border-radius: 30%;
+    border: 1px solid darkcyan;
+    text-align: center;
+}
+*/
+
+.cart:hover {
+    background: rgba(240, 240, 240, 0.2);
+}
+
+.cart-contents {
+    display: none; /* hidden by default */
+    position: absolute;
+    z-index: 1; /* overlap over page contents*/
+    width: 200px;
+    -webkit-transition: display 0.1s all;
+}
+
+.cart-contents::after {
+    display: block;
+}
+
+/* Banner and contents */
+.banner {
+    margin-top: 35px;
+    background: url(../resources/images/banner.jpg) no-repeat;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.name {
+    color: white;
+    font-size: 48px;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 1px 2px black;
+    z-index: 1;
+    margin: 0 auto;
+    padding: 10px;
+    display: block;
+    vertical-align: middle; /* TODO: vertical align is an unsolvable problem */
+}
+
+.subtitle {
+    color: white;
+    font-size: 24px;
+    font-weight: 800;
+    font-family: 'Bad Script', cursive;
+    text-shadow: 1px 1px black;
+    z-index: 1;
+    margin: 0 auto;
+    padding: 10px;
+    display: block;
+    vertical-align: middle;
+}
+
+/* Side navigation */
+
+ul {
+    list-style-type: none;
+}
+
+#placeholder { /* maintain flex position*/
+    flex: 0 0 150px;
+    text-align: left;
+    line-height: 40px;
+}
+
+ul.sidenav {
+    flex: 0 0 150px;
+    text-align: left;
+    line-height: 40px;
+    position: fixed;
+}
+
+li a {
+    border-left: 4px solid;
+    border-color: darkcyan;
+    color: peru;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+li a:hover {
+    border-color: peru;
+    color: darkcyan;
+}
+
+/* Actual page content */
+
+.page-contents {
+    flex-grow: 10;
+    padding: 0 20px;
+}
+
+.iconcat {
+    color: darkcyan;
+}
+
+.flexitem p {
+    color: saddlebrown;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
+}
+
+.navtree {
+    text-align: left;
+    padding-left: 20px;
+    font-weight: 300;
+}
+
+.navtree a {
+    color: peru;
+}
+
+#current {
+    color: darkcyan;
+}
+
+.subpage {
+    padding: 20px;
+    text-align: left;
+    font-size: 32px;
+    font-weight: 300;
+    font-family: 'Bad Script', cursive;
+}
+
+#menuitem {
+    flex-grow: 0;
+}
+
+#menuitem:hover {
+    background: rgba(240, 240, 240, 0.5);
+}
+
+.roll {
+    display: flex;
+    justify-content: space-between;
+}
+
+.itemname {
+    text-align: left;
+    font-size: 32px;
+    font-weight: 300;
+    font-family: 'Bad Script', cursive;
+    display: block;
+}
+
+#itemdes {
+    flex-grow: 100;
+}
+
+.rated {
+    color: gold;
+}
+
+.subsubheading {
+    text-align: left;
+    font-size: 24px;
+    font-weight: 300;
+    display: block;
+}
+
+.break {
+    border-bottom: 1px solid lightgrey;
+}
+
+/* General */
+a {
+    text-decoration: none;
+}
+
+img {
+    display: inline-block;
+}
+
+p {
+    text-align: justify;
+}
+
+td {
+    width: 33%;
+    padding: 10px;
+}
+
+button {
+    padding: 5px;
+    margin: 0px 0px 0px 20px;
+    background-color: peru;
+    border: solid 2px peru;
+    color: white;
+}
+
+button:hover {
+    border: solid 2px darkcyan;
+    background-color: darkcyan;
+    outline-offset: 0px 10px;
+}
+
+
+
