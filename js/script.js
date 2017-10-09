@@ -54,7 +54,8 @@ function removeFromCart() {
 
     var cartitems = document.getElementById('cartitems');
     cartitems.dataset.val = 0;
-
+    var carttotal = document.getElementById('cartprice');
+    carttotal.innerHTML = "$0.00";
     var cartrolls = document.getElementById('cartrolls');
     cartrolls.innerHTML = "Cart is empty.";
 }

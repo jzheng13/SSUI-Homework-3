@@ -20,13 +20,28 @@ Please use Chrome/Firefox for navigation.
 
 
 ### Digital Mockup
-TODO: Embed digital mockup + link
+1. Homepage
+   ![Index](./mockups/home.png)
+2. Products
+   ![Products](./mockups/products.png)
+3. Item
+   ![Item](./mockups/item.png)
+4. Cart
+   ![Cart](./mockups/cart.png)
+5. Popup Cart
+   ![Popup](./mockups/popup_cart.png)
 
 ## Reflection
-TODO: Thoughts
+The project was challenging for me in two ways. Firstly, I do not have much experience in making high-quality digital mock-ups given the absence of libraries which are already available. Previously, when constructing mock-ups for previous assignment, I had access to the Android Material library and was able to drag and drop elements. In this assignment, such choices was not available and thus I had to scale down on my plans so accommodate for my lack of familiarity in design and in the JavaScript language.
+
+Additionally, I had trouble getting the CSS styles to work as I wanted and thus there are still minor bugs in the final product.
+
+I wanted to present a clean web interface and I decided on colours which related to baking (brown-ish) and chose the complement colour as a contrast colour. Other than these two colours, most of the page is in black and white. A large number of images were used to place emphasis on the product being sold.
 
 ## Bonus Features
-TODO: Implement bonus feature for extra credit
+The specification required being able to add items into the shopping cart and display an indicator on the number of items in the cart. In my implementation, clicking on the shopping cart icon shows the current items on the shopping cart and the cart will update with addition of more items. The button at the bottom of the cart allows users to navigate to the main shopping cart page which will allow them to modify their cart and checkout.
+
+Possible extensions include allowing users to delete items in the pop-up shopping cart, as well as group items of the same type together instead of having them stack as different orders.
 
 ## Resources Used
 
@@ -89,7 +104,7 @@ TODO: Implement bonus feature for extra credit
    ![default15](resources/images/default15.jpg)
    Retrieved from Wikipedia https://upload.wikimedia.org/wikipedia/commons/2/25/Saturday_night_fever_-_cinnamon_buns.jpg
    
-2. Font Awesome icon pack
+2. Font Awesome (by Dave Gandy) icon pack
 
    Retrieved from http://fontawesome.io/
 
