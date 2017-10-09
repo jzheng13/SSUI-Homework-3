@@ -1,9 +1,13 @@
 # SSUI Homework 3
 
+**Notes**
+
+Please use Chrome/Firefox as Edge does not support certain features used.
+
+Formatted write-up [here](docs/assign3-ssui-writeup.pdf).
+
 ## Bun Bake Shop
 This is a webpage designed for *Bun Bun Bake Shop*, a bakery that specializes in cinnamon rolls, from the famous classic to a variety of artisan flavors. The bakery is located in Pittsburgh, PA, but ships fresh rools to anywhere in the United States.
-
-Please use Chrome/Firefox for navigation.
 
 ## Prototypes
 
@@ -39,7 +43,7 @@ Additionally, I had trouble getting the CSS styles to work as I wanted and thus 
 I wanted to present a clean web interface and I decided on colours which related to baking (brown-ish) and chose the complement colour as a contrast colour. Other than these two colours, most of the page is in black and white. A large number of images were used to place emphasis on the product being sold.
 
 ## Bonus Features
-The specification required being able to add items into the shopping cart and display an indicator on the number of items in the cart. In my implementation, clicking on the shopping cart icon shows the current items on the shopping cart and the cart will update with addition of more items. The button at the bottom of the cart allows users to navigate to the main shopping cart page which will allow them to modify their cart and checkout.
+The specification required being able to add items into the shopping cart and display an indicator on the number of items in the cart. In my implementation, clicking on the shopping cart icon shows the current items on the shopping cart and the cart will update with addition of more items. The button at the bottom of the cart allows users to navigate to the main shopping cart page which will allow them to modify their cart and checkout. Unfortunately, this feature is buggy as I cannot resolve the problem of faulty placement of this overlay. 
 
 Possible extensions include allowing users to delete items in the pop-up shopping cart, as well as group items of the same type together instead of having them stack as different orders.
 
