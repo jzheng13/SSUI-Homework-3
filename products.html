@@ -25,23 +25,32 @@
                     <i class="fa fa-search" aria-hidden="true"></i>
                     <input type="text" name="search" placeholder="Search" />
                 </form>
-                <a href="#" class="cart">
+                <div class="cart" onclick="showCart()">
                     <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                     <span class="badge" id="cartitems" data-val="0"></span>
-                </a>
+                </div>
             </div>
-            <div class="cartcontents" id="cartcontents"></div>
         </div>
     </div>
 
-    <a href="index.html">
-        <div class="banner">
-            <div id="bannercontents">
-                <span class="name">Bun Bun Bake Shop</span>
-                <span class="subtitle">We're on a roll!</span>
+    <div class="container">
+        <div class="cart-contents" id="cart-contents">
+            <div class="cardhead roll">
+                <span>Total: </span><span id="cartprice">$6.00</span>
             </div>
+            <ul class="cartrolls" id="cartrolls">
+                <li class="roll">
+                    <img class="cartimage" src="resources/images/default1.jpg" />
+                    <div>
+                        <span class="cartitemname"><b>Original</b></span>
+                        <span class="cartitemprice">$3.00</span>
+                        <span class="cartitemqty">x 2</span>
+                    </div>
+                </li>
+            </ul>
+            <button type="button" onclick="goToCart()">Go to cart</button>
         </div>
-    </a>
+    </div>
 
     <div class="section">
         <div class="container">
@@ -62,80 +71,80 @@
                     </div>
                     <div class="section">
                         <div class="flexbox flexwrap">
-                            <div class="flexitem" id="menuitem" onclick="toItemPage()">
-                                <img width="250" height="175" src="resources/images/default.jpg" alt="NA" />
+                            <div class="flexitem" id="menuitem" onclick="toItemPage(1)">
+                                <img width="250" height="175" src="resources/images/default1.jpg" alt="NA" />
                                 <span class="roll"><b>Original</b><span>$3.00</span></span>
                                 <p>The classic.</p>
                             </div>
-                            <div class="flexitem" id="menuitem" onclick="toItemPage()">
-                                <img width="250" height="175" src="resources/images/default.jpg" alt="NA" />
+                            <div class="flexitem" id="menuitem" onclick="toItemPage(2)">
+                                <img width="250" height="175" src="resources/images/default2.jpg" alt="NA" />
                                 <span class="roll"><b>Original (Gluten-free)</b><span>$3.50</span></span>
                                 <p>The classic and gluten-free!</p>
                             </div>
-                            <div class="flexitem" id="menuitem" onclick="toItemPage()">
-                                <img width="250" height="175" src="resources/images/default.jpg" alt="NA" />
+                            <div class="flexitem" id="menuitem" onclick="toItemPage(3)">
+                                <img width="250" height="175" src="resources/images/default3.jpg" alt="NA" />
                                 <span class="roll"><b>Original (Vegan)</b><span>$3.50</span></span>
                                 <p>The classic for herbivores.</p>
                             </div>
-                            <div class="flexitem" id="menuitem" onclick="toItemPage()">
-                                <img width="250" height="175" src="resources/images/default.jpg" alt="NA" />
+                            <div class="flexitem" id="menuitem" onclick="toItemPage(4)">
+                                <img width="250" height="175" src="resources/images/default4.jpg" alt="NA" />
                                 <span class="roll"><b>Maple Apple Pecan</b><span>$3.50</span></span>
                                 <p>With a touch of maple syrup, apple concentrate and pecan nuts.</p>
                             </div>
-                            <div class="flexitem" id="menuitem" onclick="toItemPage()">
-                                <img width="250" height="175" src="resources/images/default.jpg" alt="NA" />
+                            <div class="flexitem" id="menuitem" onclick="toItemPage(5)">
+                                <img width="250" height="175" src="resources/images/default5.jpg" alt="NA" />
                                 <span class="roll"><b>Bacon</b><span>$3.50</span></span>
                                 <p>Breakfast!</p>
                             </div>
-                            <div class="flexitem" id="menuitem" onclick="toItemPage()">
-                                <img width="250" height="175" src="resources/images/default.jpg" alt="NA" />
+                            <div class="flexitem" id="menuitem" onclick="toItemPage(6)">
+                                <img width="250" height="175" src="resources/images/default6.jpg" alt="NA" />
                                 <span class="roll"><b>Walnut</b><span>$3.50</span></span>
-                                <p>Can't be bothered with descriptions anymore.</p>
+                                <p>Walnuts! Yay! Not really.</p>
                             </div>
-                            <div class="flexitem" id="menuitem" onclick="toItemPage()">
-                                <img width="250" height="175" src="resources/images/default.jpg" alt="NA" />
+                            <div class="flexitem" id="menuitem" onclick="toItemPage(7)">
+                                <img width="250" height="175" src="resources/images/default7.jpg" alt="NA" />
                                 <span class="roll"><b>Pumpkin Spice</b><span>$3.50</span></span>
-                                <p>Can't be bothered with descriptions anymore.</p>
+                                <p>A Halloween special brought back by popular demand.</p>
                             </div>
-                            <div class="flexitem" id="menuitem" onclick="toItemPage()">
-                                <img width="250" height="175" src="resources/images/default.jpg" alt="NA" />
+                            <div class="flexitem" id="menuitem" onclick="toItemPage(8)">
+                                <img width="250" height="175" src="resources/images/default8.jpg" alt="NA" />
                                 <span class="roll"><b>Caramel Pecan</b><span>$3.50</span></span>
-                                <p>Can't be bothered with descriptions anymore.</p>
+                                <p>For those with a sweeth tooth. And don't mind the stickiness.</p>
                             </div>
-                            <div class="flexitem" id="menuitem" onclick="toItemPage()">
-                                <img width="250" height="175" src="resources/images/default.jpg" alt="NA" />
+                            <div class="flexitem" id="menuitem" onclick="toItemPage(9)">
+                                <img width="250" height="175" src="resources/images/default9.jpg" alt="NA" />
                                 <span class="roll"><b>Carrot Cake</b><span>$3.50</span></span>
-                                <p>Can't be bothered with descriptions anymore.</p>
+                                <p>Deconstructing a carrot cake into a roll!</p>
                             </div>
-                            <div class="flexitem" id="menuitem" onclick="toItemPage()">
-                                <img width="250" height="175" src="resources/images/default.jpg" alt="NA" />
+                            <div class="flexitem" id="menuitem" onclick="toItemPage(10)">
+                                <img width="250" height="175" src="resources/images/default10.jpg" alt="NA" />
                                 <span class="roll"><b>Old Fashioned Buttermilk</b><span>$3.50</span></span>
-                                <p>Can't be bothered with descriptions anymore.</p>
+                                <p>Old-fashioned rolls are the best.</p>
                             </div>
-                            <div class="flexitem" id="menuitem" onclick="toItemPage()">
-                                <img width="250" height="175" src="resources/images/default.jpg" alt="NA" />
+                            <div class="flexitem" id="menuitem" onclick="toItemPage(11)">
+                                <img width="250" height="175" src="resources/images/default11.jpg" alt="NA" />
                                 <span class="roll"><b>Strawberry Rubarb</b><span>$3.50</span></span>
-                                <p>Can't be bothered with descriptions anymore.</p>
+                                <p>An unhappy marriage, but tasty.</p>
                             </div>
-                            <div class="flexitem" id="menuitem" onclick="toItemPage()">
-                                <img width="250" height="175" src="resources/images/default.jpg" alt="NA" />
+                            <div class="flexitem" id="menuitem" onclick="toItemPage(12)">
+                                <img width="250" height="175" src="resources/images/default12.jpg" alt="NA" />
                                 <span class="roll"><b>Birthday Cake</b><span>$4.00</span></span>
-                                <p>Can't be bothered with descriptions anymore.</p>
+                                <p>One year older, one more roll.</p>
                             </div>
-                            <div class="flexitem" id="menuitem" onclick="toItemPage()">
-                                <img width="250" height="175" src="resources/images/default.jpg" alt="NA" />
+                            <div class="flexitem" id="menuitem" onclick="toItemPage(13)">
+                                <img width="250" height="175" src="resources/images/default13.jpg" alt="NA" />
                                 <span class="roll"><b>Lemon Lavender</b><span>$4.00</span></span>
-                                <p>Can't be bothered with descriptions anymore.</p>
+                                <p>An edible version of your essential oils.</p>
                             </div>
-                            <div class="flexitem" id="menuitem" onclick="toItemPage()">
-                                <img width="250" height="175" src="resources/images/default.jpg" alt="NA" />
+                            <div class="flexitem" id="menuitem" onclick="toItemPage(14)">
+                                <img width="250" height="175" src="resources/images/default14.jpg" alt="NA" />
                                 <span class="roll"><b>Cranberry</b><span>$4.00</span></span>
-                                <p>Can't be bothered with descriptions anymore.</p>
+                                <p>Made with local (American) harvest.</p>
                             </div>
-                            <div class="flexitem" id="menuitem" onclick="toItemPage()">
-                                <img width="250" height="175" src="resources/images/default.jpg" alt="NA" />
+                            <div class="flexitem" id="menuitem" onclick="toItemPage(15)">
+                                <img width="250" height="175" src="resources/images/default15.jpg" alt="NA" />
                                 <span class="roll"><b>Blackberry</b><span>$4.00</span></span>
-                                <p>Can't be bothered with descriptions anymore.</p>
+                                <p>The best flavour is black.</p>
                             </div>
                         </div>
                     </div>

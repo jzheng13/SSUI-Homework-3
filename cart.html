@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Bun Bun Bake Shop :: Rolls</title>
+    <title>Bun Bun Bake Shop :: Cart</title>
 
     <!--The following line loads in your CSS style sheet-->
     <link rel="stylesheet" href="styles/index.css">
@@ -25,12 +25,30 @@
                     <i class="fa fa-search" aria-hidden="true"></i>
                     <input type="text" name="search" placeholder="Search" />
                 </form>
-                <a href="#" class="cart">
+                <div class="cart" onclick="showCart()">
                     <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                     <span class="badge" id="cartitems" data-val="0"></span>
-                </a>
+                </div>
             </div>
-            <div class="cartcontents" id="cartcontents"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="cart-contents" id="cart-contents">
+            <div class="cardhead roll">
+                <span>Total: </span><span id="cartprice">$6.00</span>
+            </div>
+            <ul class="cartrolls" id="cartrolls">
+                <li class="roll">
+                    <img class="cartimage" src="resources/images/default1.jpg" />
+                    <div>
+                        <span class="cartitemname"><b>Original</b></span>
+                        <span class="cartitemprice">$3.00</span>
+                        <span class="cartitemqty">x 2</span>
+                    </div>
+                </li>
+            </ul>
+            <button type="button" onclick="goToCart()">Go to cart</button>
         </div>
     </div>
 
@@ -66,7 +84,7 @@
                                 <span>There are no items in your cart.</span>
                             </div>
                             <div class="flexitem" id="menuitem">
-                                <img width="200" height="140" src="resources/images/default.jpg" alt="NA" />
+                                <img width="200" height="140" src="resources/images/default1.jpg" alt="NA" />
                             </div>
                             <div class="flexitem" id="itemdes">                         
                                 <div class="subsubheading">
@@ -91,14 +109,15 @@
                                 <div class="subsubheading">
                                     Total
                                 </div>
-                                <div class="subsubheading" id="totalprice">
-                                    $7.00
+                                <div class="subsubheading">
+                                    <div id="totalprice">
+                                        $7.00
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="section">
-
                     </div>
                 </div>
             </div>

@@ -1,0 +1,138 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Bun Bun Bake Shop :: Original (Vegan)</title>
+
+    <!--The following line loads in your CSS style sheet-->
+    <link rel="stylesheet" href="styles/index.css">
+
+    <!--The following line loads the font-awesome icon libary-->
+    <link rel="stylesheet" href="styles/font-awesome.min.css">
+
+    <!--The following line loads in 2 fonts from Google Fonts: Bad Script and Lato-->
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script|Lato" rel="stylesheet">
+
+    <!--The following line loads in your JS script-->
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="container">
+            <div class="roll">
+                <form>
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                    <input type="text" name="search" placeholder="Search" />
+                </form>
+                <div class="cart" onclick="showCart()">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    <span class="badge" id="cartitems" data-val="0"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="cart-contents" id="cart-contents">
+            <div class="cardhead roll">
+                <span>Total: </span><span id="cartprice">$6.00</span>
+            </div>
+            <ul class="cartrolls" id="cartrolls">
+                <li class="roll">
+                    <img class="cartimage" src="resources/images/default1.jpg" />
+                    <div>
+                        <span class="cartitemname"><b>Original</b></span>
+                        <span class="cartitemprice">$3.00</span>
+                        <span class="cartitemqty">x 2</span>
+                    </div>
+                </li>
+            </ul>
+            <button type="button" onclick="goToCart()">Go to cart</button>
+        </div>
+    </div>
+
+    <a href="index.html">
+        <div class="banner">
+            <div id="bannercontents">
+                <span class="name">Bun Bun Bake Shop</span>
+                <span class="subtitle">We're on a roll!</span>
+            </div>
+        </div>
+    </a>
+
+    <div class="section">
+        <div class="container">
+            <div class="flexbox flexrow">
+                <div id="placeholder"></div>
+                <ul class="sidenav">
+                    <li><a href="#">&nbsp;&nbsp;About</a></li>
+                    <li><a href="products.html">&nbsp;&nbsp;Rolls</a></li>
+                    <li><a href="#">&nbsp;&nbsp;Delivery</a></li>
+                </ul>
+                <div class="page-contents">
+                    <div class="section">
+                        <div class="navtree">
+                            <a href="index.html">Home</a> > 
+                            <a href="products.html">Rolls</a> >
+                            <a id="current" href="/">Original (Vegan)</a>
+                        </div>
+                        <div class="flexbox flexwrap">
+                            <div class="flexitem" id="menuitem">
+                                <img width="250" height="175" src="resources/images/default3.jpg" alt="NA" />
+                            </div>
+                            <div class="flexitem" id="itemdes">
+                                <div class="itemname">
+                                    <span id="itemtoadd">Original (Vegan)</span>
+                                    <span class="fa fa-star rated"></span>
+                                    <span class="fa fa-star rated"></span>
+                                    <span class="fa fa-star rated"></span>
+                                    <span class="fa fa-star rated"></span>
+                                    <span class="fa fa-star rated"></span>
+                                </div>
+                                <p>The classic for herbivores.</p>
+                                <div class="roll addcart">
+                                    <span id="price">$3.50</span>
+                                    <form>
+                                        <label for="qty">Quantity</label>
+                                        <input type="number" value="1" id="qty" min="1" max="50"/>
+                                        <button type="button" onclick="addToCart(3)">Add to cart</button>
+                                    </form> 
+                                </div>
+                            </div>                  
+                        </div>
+                    </div>
+                    <div class="section">
+
+                    </div>
+                    <div class="section">
+
+                    </div>
+                    <div class="section">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="container">
+            <div class="contact">
+                <b>Bun Bun Bake Shop</b><br />
+                4321 Murray Ave <br />
+                Pittsburgh, PA 15217 <br />
+                &#128222; (412) 123-4567 <br />
+                &#128231; rollaboat@bunbunbakes.com <br />
+                &#128336; 10:00 AM - 17:00 PM on weekdays
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; Created by Jia Zheng (jzheng2@andrew.cmu.edu) for F17 SSUI Assignment 3.
+        </div>
+    </footer>
+</body>
+
+
+</html>

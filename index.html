@@ -25,12 +25,30 @@
                     <i class="fa fa-search" aria-hidden="true"></i>
                     <input type="text" name="search" placeholder="Search"/>
                 </form>
-                <a href="#" class="cart">
+                <div class="cart" onclick="showCart()">
                     <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                     <span class="badge" id="cartitems" data-val="0"></span>
-                </a>
+                </div>
             </div>
-            <div class="cartcontents" id="cartcontents"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="cart-contents" id="cart-contents">
+            <div class="cardhead roll">
+                <span>Total: </span><span id="cartprice">$7.00</span>
+            </div>
+            <ul class="cartrolls" id="cartrolls">
+                <li class="roll">
+                    <img class="cartimage" src="resources/images/default1.jpg" />
+                    <div>
+                        <span class="cartitemname"><b>Original</b></span>
+                        <span class="cartitemprice">$3.50</span> x
+                        <span class="cartitemqty">2</span>
+                    </div>
+                </li>
+            </ul>
+            <button type="button" onclick="goToCart()">Go to cart</button>
         </div>
     </div>
 

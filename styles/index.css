@@ -139,34 +139,56 @@ input[type=text]:focus {
     float: right;
 }
 
-
-/*
-.badge[data-badge]:after {
-    content: attr(data-badge);
-    background-color: darkcyan;
-    color: lightgrey;
-    height: 25px;
-    width: 40px;
-    border-radius: 30%;
-    border: 1px solid darkcyan;
-    text-align: center;
-}
-*/
-
 .cart:hover {
     background: rgba(240, 240, 240, 0.2);
 }
 
 .cart-contents {
+    float: right;
     display: none; /* hidden by default */
-    position: absolute;
+    background: white;
+    position: fixed;
     z-index: 1; /* overlap over page contents*/
-    width: 200px;
+    width: 300px;
+    padding: 20px;
     -webkit-transition: display 0.1s all;
 }
 
-.cart-contents::after {
+.cart-contents ul {
+    text-decoration: none;
+    display: inline;
+    margin-bottom: 20px;
+}
+
+cart-contents ul li {
+    padding: 10px;
+}
+
+.show{
     display: block;
+}
+
+.carthead {
+    border-bottom: 2px solid lightgrey;
+    padding: 10px;
+}
+
+.cartimage {
+    width: 100px;
+    height: 75px;
+}
+
+.cartitemname {
+    display: block;
+    text-align: left;
+}
+
+.cartitemprice {
+    color: darkcyan;
+}
+
+.cart-contents button {
+    width: 250px;
 }
 
 /* Banner and contents */
@@ -317,6 +339,7 @@ li a:hover {
 }
 
 /* General */
+
 a {
     text-decoration: none;
 }
