@@ -1,5 +1,7 @@
 # SSUI Homework 3
 
+By Jia Zheng (jzheng2@andrew.cmu.edu)
+
 **Notes**
 
 Please use Chrome/Firefox as Edge does not support certain features used.
