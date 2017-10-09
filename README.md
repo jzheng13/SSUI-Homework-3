@@ -36,7 +36,7 @@ This is a webpage designed for *Bun Bun Bake Shop*, a bakery that specializes in
    ![Popup](./mockups/popup_cart.png)
 
 ## Reflection
-The project was challenging for me in two ways. Firstly, I do not have much experience in making high-quality digital mock-ups given the absence of libraries which are already available. Previously, when constructing mock-ups for previous assignment, I had access to the Android Material library and was able to drag and drop elements. In this assignment, such choices was not available and thus I had to scale down on my plans so accommodate for my lack of familiarity in design and in the JavaScript language.
+The project was challenging for me in two ways. Firstly, I do not have much experience in making high-quality digital mock-ups given the absence of libraries which are already available. Previously, when constructing mock-ups for previous assignment, I had access to the Android Material library and was able to drag and drop elements. In this assignment, such choices was not available and thus I had to scale down on my plans to accommodate for my lack of familiarity in both design and the JavaScript language.
 
 Additionally, I had trouble getting the CSS styles to work as I wanted and thus there are still minor bugs in the final product.
 
