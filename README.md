@@ -4,7 +4,7 @@
 
 Please use Chrome/Firefox as Edge does not support certain features used.
 
-Formatted write-up [here](doc/assign3-ssui-writeup.pdf).
+Formatted write-up [here](doc/assign3-writeup-ssui.pdf).
 
 ## Bun Bake Shop
 This is a webpage designed for *Bun Bun Bake Shop*, a bakery that specializes in cinnamon rolls, from the famous classic to a variety of artisan flavors. The bakery is located in Pittsburgh, PA, but ships fresh rools to anywhere in the United States.
