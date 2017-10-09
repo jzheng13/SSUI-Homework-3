@@ -6,6 +6,8 @@ By Jia Zheng (jzheng2@andrew.cmu.edu)
 
 Please use Chrome/Firefox as Edge does not support certain features used.
 
+Link to website [here](https://jzheng13.github.io/SSUI-Homework-3/).
+
 Formatted write-up [here](doc/assign3-writeup-ssui.pdf).
 
 ## Bun Bake Shop
