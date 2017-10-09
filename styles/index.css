@@ -188,6 +188,7 @@ cart-contents ul li {
 }
 
 .cart-contents button {
+    margin-top: 20px;
     width: 250px;
 }
 
